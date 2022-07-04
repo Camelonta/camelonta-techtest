@@ -10,6 +10,7 @@ const Card = ({card}) => {
     <p><strong>text:</strong> {text}</p>
     <p><strong>icon:</strong> {icon}</p>
     <img src={`/icons/${icon}.svg`}/>
+    <h1>Some cool change</h1>
   </div>
 )};
 
