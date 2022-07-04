@@ -1,7 +1,7 @@
 # Camelonta techtest
 
 ## Intro
-Det här är en basic Next.js app som ska/kan/bör användas som grund för din lösning. Next.js är ett React-ramverk som vi ofta jobbar med. Mer info om det finns på [https://nextjs.org/](https://nextjs.org/). Det är dock inget krav att kunna Next.js för att uppgiften ska kunna lösas, men några saker kan vara bra att vet om. Läs mer under [Tips](#tips),
+Det här är en basic Next.js app som ska/kan/bör användas som grund för din lösning. Next.js är ett React-ramverk som vi ofta jobbar med. Mer info om det finns på [https://nextjs.org/](https://nextjs.org/). Det är dock inget krav att kunna Next.js för att uppgiften ska kunna lösas, men några saker kan vara bra att vet om. Läs mer under [Tips](#tips-och-info),
 
 En API-endpoint är uppsatt för att hämta ut "korten" som ska renderas ut. Sök igenom projektet efter texten `TODO:` så ser du vart det ska/kan göras. 
 
@@ -9,6 +9,8 @@ En API-endpoint är uppsatt för att hämta ut "korten" som ska renderas ut. Sö
 
 ## Vårat mål med techtest
 Vi förstår såklart att alla har olika förutsättningar, både kunskaps- och tidsmässigt, för en sån här uppgift. Grunden till att vi genomför techtest är att ha något att titta på tillsammans och diskutera. Vi kommer att titta på hur strukturen ser ut, utbrytning av komponenter, styling-val, ikonhantering osv. Har en tankar som inte hinns med att bygga, ta gärna med det till vårt nästa samtal.
+
+Lägg den tid du har. Självklart gör vi bedömningen utifrån varje enskild persons förutsättningar.
 
 
 ## Start
@@ -50,7 +52,7 @@ I stort så går uppgiften ut på att skapa upp en komponent utifrån designen i
 
 
 
-# Tips
+# Tips och info
 
 ## Next.js
 Som sagt så är det här en Next.js applikation. För att lösa uppgiften behövs inga djupare Next.js-kunskaper. Dock behöver man veta några saker.
@@ -60,6 +62,11 @@ Rotingen hanteras av Next.js. I den här applikationen behöver du endast fokuse
 
 ### API route
 Det finns en API-route uppsatt för att exponera den API-endpoint som ska användas. Egentligen behöver du inte bry dig om den, men det kan vara bra att veta att allt som ligger under `/pages/api` kommer att hanteras som api routes. I det här fallet är det alltså filen `/pages/api/cards/index.js` som används.
+
+### Ikoner
+Ikonerna ligger i mappen `/public/icons`. Next.js servar filerna i mappen `/public` statiskt. 
+
+[Next.js - Static File Serving](https://nextjs.org/docs/basic-features/static-file-serving)
 
 ## Basic
 
