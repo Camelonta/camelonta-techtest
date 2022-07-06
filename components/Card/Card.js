@@ -6,17 +6,23 @@ import { cards } from '../../data';
 
 const Card = () => {
  
+  console.log('cards', cards)
 
   return(
     <>
 
 {cards.map((item) => (
-            <StyledCard
-              key={item.id}
-              icon={item.icon}
-              text={item.text}
-              />
+<StyledCard key={item.id}>
+    <p>Icon: {item.icon}</p>
+    <p>Heading: {item.heading}</p>
+    <p>Text: {item.text} </p>
+  </StyledCard>
 
+            // <StyledCard
+            //   key={item.id}
+            //   icon={item.icon}
+            //   text={item.text}
+            //   />
              ))}
 
     {/* <StyledCard> */}
