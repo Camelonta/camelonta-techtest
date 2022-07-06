@@ -8,17 +8,16 @@ export const devices = {
 
 export const Container = styled.div`
   width: 375px;
-  margin: 20px auto;
+  margin: 0 auto;
+  padding: 15px 15px;
   display: flex;
   justify-content: center;
   flex-direction: column;
 
   @media ${devices.tablet} {
     width: 768px;
-    margin: 20px;
   }
   @media ${devices.desktop} {
     width: 1025px;
-    margin: 20px;
   }
 `

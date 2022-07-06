@@ -7,8 +7,8 @@ export const devices = {
 }
 
 export const CardsContainer = styled.div`
-  width: 375px;
-  margin: 20px auto;
+  width: 350px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
 
