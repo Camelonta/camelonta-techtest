@@ -8,12 +8,14 @@ export const devices = {
 
 export const Container = styled.div`
   width: 375px;
-  margin: 0 auto;
+  margin: 20px auto;
 
   @media ${devices.tablet} {
     width: 768px;
+    margin: 20px;
   }
   @media ${devices.desktop} {
     width: 1025px;
+    margin: 20px;
   }
 `

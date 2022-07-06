@@ -9,16 +9,12 @@ import { Container } from "../styles/GeneralStyling"
 
 export default function Index() {
   const [data, setData] = useState([])
-  const test = { hej: "tjabba", hallå: "hejdå" }
-  // // const hej = test.hej
-  // const {hej, hallå} = test
 
   useEffect(() => {
     const fetchData = async () => {
       const data = await fetch("/api/cards")
       const body = await data.json()
       setData(body)
-      console.log("body", body)
     }
     fetchData()
   }, [])
@@ -28,7 +24,7 @@ export default function Index() {
       <Container>
         <Header />
         <CardsContainer>
-          {data && data.map((card) => <Card card={card} test={test} />)}
+          {data && data.map((card) => <Card card={card} />)}
         </CardsContainer>
         <Footer />
       </Container>
