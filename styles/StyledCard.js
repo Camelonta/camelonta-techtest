@@ -36,7 +36,7 @@ export const StyledCard = styled.div`
     margin-block-start: 0px;
   }
   p {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 24px;
     font-weight: 400;
   }
