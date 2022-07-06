@@ -9,6 +9,9 @@ export const devices = {
 export const Container = styled.div`
   width: 375px;
   margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 
   @media ${devices.tablet} {
     width: 768px;
