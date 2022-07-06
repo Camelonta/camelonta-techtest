@@ -5,6 +5,7 @@ import { useEffect, useState } from "react"
 import { Header } from "../components/Card/Header"
 import { Footer } from "../components/Card/Footer"
 import { CardsContainer } from "../styles/StyledCard"
+import { Container } from "../styles/GeneralStyling"
 
 export default function Index() {
   const [data, setData] = useState([])
@@ -24,11 +25,13 @@ export default function Index() {
 
   return (
     <>
-      <Header />
-      <CardsContainer>
-        {data && data.map((card) => <Card card={card} test={test} />)}
-      </CardsContainer>
-      <Footer />
+      <Container>
+        <Header />
+        <CardsContainer>
+          {data && data.map((card) => <Card card={card} test={test} />)}
+        </CardsContainer>
+        <Footer />
+      </Container>
       <GlobalStyle />
     </>
   )

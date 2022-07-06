@@ -12,5 +12,6 @@ export const FooterText = styled.div`
 
   img {
     width: 50px;
+    margin-left: 0.2rem;
   }
 `

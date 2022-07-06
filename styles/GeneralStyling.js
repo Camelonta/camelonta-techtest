@@ -6,11 +6,9 @@ export const devices = {
   desktop: "(min-width: 1025px)",
 }
 
-export const CardsContainer = styled.div`
+export const Container = styled.div`
   width: 375px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: row;
 
   @media ${devices.tablet} {
     width: 768px;
