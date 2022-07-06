@@ -4,27 +4,33 @@ import { StyledCard } from '../../styles/StyledCard';
 
 import { cards } from '../../data';
 
-const Card = ({card}) => {
-  const {id, heading, text, icon} = card;
-
-console.log('cards', cards)
-
+const Card = () => {
+ 
 
   return(
     <>
-    <StyledCard>
 
-    <p><strong>id:</strong> {id}</p>
+{cards.map((item) => (
+            <StyledCard
+              key={item.id}
+              icon={item.icon}
+              text={item.text}
+              />
+
+             ))}
+
+    {/* <StyledCard> */}
+    {/* <p><strong>id:</strong> {id}</p>
     <p><strong>heading:</strong> {heading}</p>
     <p><strong>text:</strong> {text}</p>
     <p><strong>icon:</strong> {icon}</p>
-    <img src={`/icons/${icon}.svg`}/>
+    <img src={`/icons/${icon}.svg`}/> */}
     
     <GlobalStyle />
-    </StyledCard>
+    {/* </StyledCard> */}
 
   </>
 )};
 
 
-export default Card;
+export default Card

@@ -15,3 +15,7 @@ export const StyledCard = styled.div`
     margin-bottom: 1rem;
     color: white;
 `
+
+export const LargeHeading = styled.h1`
+font-size: 22px;
+`
