@@ -1,17 +1,20 @@
-import React from 'react';
-import styles from './styles.module.css';
+import React from "react"
+import { StyledCard } from "../../styles/StyledCard"
 
-const Card = ({card}) => {
-  const {id, heading, text, icon} = card;
-  return(
-  <div className={styles.card}>
-    <p><strong>id:</strong> {id}</p>
-    <p><strong>heading:</strong> {heading}</p>
-    <p><strong>text:</strong> {text}</p>
-    <p><strong>icon:</strong> {icon}</p>
-    <img src={`/icons/${icon}.svg`}/>
-  </div>
-)};
+const Card = (props) => {
+  const { card } = props
 
+  return (
+    <StyledCard key={card.id}>
+      <div>
+        <img src={`/icons/${card.icon}.svg`} />
+      </div>
+      <div>
+        <h4> {card.heading}</h4>
+        <p>{card.text} </p>
+      </div>
+    </StyledCard>
+  )
+}
 
-export default Card;
+export default Card

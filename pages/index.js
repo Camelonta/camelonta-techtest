@@ -1,31 +1,34 @@
-import Card from '../components/Card/Card';
+import Card from "../components/Card/Card"
+import GlobalStyle from "../styles/GlobalStyle"
+import { useEffect, useState } from "react"
+
+import { Header } from "../components/Card/Header"
+import { Footer } from "../components/Card/Footer"
+import { CardsContainer } from "../styles/StyledCard"
+import { Container } from "../styles/GeneralStyling"
 
 export default function Index() {
+  const [data, setData] = useState([])
 
-
-  // TODO: Instead of using this hardcoded data variable, fetch data from API endpoint '/api/cards'. The data structure is the same.
-
-
-  const data = [
-    {
-      id: '1',
-      heading: 'This is hardcoded',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      icon: 'house',
-    },
-    {
-      id: '2',
-      heading: 'Not the correct data',
-      text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-      icon: 'grade',
-    },
-  ];
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await fetch("/api/cards")
+      const body = await data.json()
+      setData(body)
+    }
+    fetchData()
+  }, [])
 
   return (
-    <div>
-      {data && data.map((card) => (
-        <Card card={card} />
-      ))}
-    </div>
+    <>
+      <Container>
+        <Header />
+        <CardsContainer>
+          {data && data.map((card) => <Card card={card} />)}
+        </CardsContainer>
+        <Footer />
+      </Container>
+      <GlobalStyle />
+    </>
   )
 }
