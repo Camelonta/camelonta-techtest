@@ -13,5 +13,14 @@ export const FooterText = styled.div`
   img {
     width: 50px;
     margin-left: 0.2rem;
+    display: block;
+    align-self: center;
+    animation: rotate 8s linear infinite;
+
+    @keyframes rotate {
+      100% {
+        transform: rotate(360deg);
+      }
+    }
   }
 `

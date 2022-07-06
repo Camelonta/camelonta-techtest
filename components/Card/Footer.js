@@ -5,7 +5,10 @@ export const Footer = () => {
     <FooterText>
       <span> Made by Emma for </span>
       <a href="https://camelonta.se/">
-        <img src="https://i.postimg.cc/qq3JyDpW/camelonta-removebg-preview.png" />
+        <img
+          className="logo"
+          src="https://i.postimg.cc/qq3JyDpW/camelonta-removebg-preview.png"
+        />
       </a>
     </FooterText>
   )

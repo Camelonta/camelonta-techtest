@@ -56,6 +56,10 @@ export const StyledCard = styled.div`
     padding: 2rem 1rem 0 0;
   }
 
+  h4 {
+    line-height: 24px;
+  }
+
   img {
     border: 1px solid white;
     border-radius: 50%;
@@ -74,7 +78,7 @@ export const StyledCard = styled.div`
 
     h4 {
       font-size: 16px;
-      line-height: 24px;
+      line-height: 20px;
       font-weight: 700;
     }
     p {
