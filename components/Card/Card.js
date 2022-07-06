@@ -1,10 +1,10 @@
-import React from "react";
-import GlobalStyle from "../../styles/GlobalStyle";
-import { StyledCard } from "../../styles/StyledCard";
-import { Container } from "../../styles/StyledCard";
+import React from "react"
+import GlobalStyle from "../../styles/GlobalStyle"
+import { StyledCard } from "../../styles/StyledCard"
+import { Container } from "../../styles/StyledCard"
 
 const Card = (props) => {
-  const { card } = props;
+  const { card } = props
 
   return (
     <Container>
@@ -16,7 +16,7 @@ const Card = (props) => {
 
       <GlobalStyle />
     </Container>
-  );
-};
+  )
+}
 
-export default Card;
+export default Card
