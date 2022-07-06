@@ -29,7 +29,7 @@ export const StyledCard = styled.div`
   padding: 2rem 0 0 0;
 
   h4 {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 14px;
     font-weight: 700;
     margin-block-end: 0px;
@@ -45,9 +45,9 @@ export const StyledCard = styled.div`
     border: 1px solid white;
     border-radius: 50%;
     padding: 10px;
-    height: 32px;
-    width: 32px;
-    margin-right: 24px;
+    height: 50px;
+    width: 50px;
+    margin-right: 20px;
   }
 
   @media ${devices.tablet} {
@@ -60,8 +60,8 @@ export const StyledCard = styled.div`
     border: 1px solid white;
     border-radius: 50%;
     padding: 10px;
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     margin-bottom: 14px;
   }
 
@@ -78,7 +78,7 @@ export const StyledCard = styled.div`
       font-weight: 700;
     }
     p {
-      font-size: 14px;
+      font-size: 16px;
       line-height: 24px;
       font-weight: 400;
       max-width: 17em;
