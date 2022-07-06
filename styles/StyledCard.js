@@ -9,7 +9,7 @@ export const devices = {
 }
 
 
-export const Container = styled.section`
+export const Container = styled.div`
 width: 375px;
 margin: 0 auto;
 display: flex;

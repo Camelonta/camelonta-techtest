@@ -1,32 +1,22 @@
-import React from 'react'
-import GlobalStyle from '../../styles/GlobalStyle'
-import { StyledCard } from '../../styles/StyledCard'
-import { Container } from '../../styles/StyledCard';
+import React from "react";
+import GlobalStyle from "../../styles/GlobalStyle";
+import { StyledCard } from "../../styles/StyledCard";
+import { Container } from "../../styles/StyledCard";
 
-import { cards } from '../../data';
+const Card = (props) => {
+  const { card } = props;
 
-const Card = () => {
- 
-  console.log('cards', cards)
+  return (
+    <Container>
+      <StyledCard key={card.id}>
+        <img src={`/icons/${card.icon}.svg`} />
+        <h4> {card.heading}</h4>
+        <p>{card.text} </p>
+      </StyledCard>
 
-  return(
-
-<Container>
-  
-{cards.map((item) => (
-<StyledCard key={item.id}>
-  <img src={`/icons/${item.icon}.svg`}/>
-   <h4> {item.heading}</h4>
-    <p>{item.text} </p>
-  </StyledCard>
-             ))}
-
-    
-    <GlobalStyle />
-
+      <GlobalStyle />
     </Container>
+  );
+};
 
-)}
-
-
-export default Card
+export default Card;

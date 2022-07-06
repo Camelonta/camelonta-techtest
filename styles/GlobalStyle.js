@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 * {
@@ -6,7 +6,8 @@ const GlobalStyle = createGlobalStyle`
 }
 body {
     font-family: 'Verdana', sans-serif;
+    background: #136744;
 }
-`
+`;
 
-export default GlobalStyle
+export default GlobalStyle;
