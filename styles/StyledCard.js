@@ -24,7 +24,7 @@ export const CardsContainer = styled.div`
 
 export const StyledCard = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   color: white;
   padding: 2rem 0 0 0;
 
@@ -33,6 +33,7 @@ export const StyledCard = styled.div`
     line-height: 14px;
     font-weight: 700;
     margin-block-end: 0px;
+    margin-block-start: 0px;
   }
   p {
     font-size: 14px;
@@ -43,9 +44,10 @@ export const StyledCard = styled.div`
   img {
     border: 1px solid white;
     border-radius: 50%;
-    padding: 8px;
+    padding: 10px;
     height: 32px;
     width: 32px;
+    margin-right: 24px;
   }
 
   @media ${devices.tablet} {
@@ -57,9 +59,10 @@ export const StyledCard = styled.div`
   img {
     border: 1px solid white;
     border-radius: 50%;
-    padding: 8px;
+    padding: 10px;
     height: 40px;
     width: 40px;
+    margin-bottom: 14px;
   }
 
   @media ${devices.desktop} {
@@ -78,13 +81,14 @@ export const StyledCard = styled.div`
       font-size: 14px;
       line-height: 24px;
       font-weight: 400;
+      max-width: 17em;
     }
     img {
       border: 1px solid white;
       border-radius: 50%;
-      padding: 8px;
-      height: 42px;
-      width: 42px;
+      padding: 10px;
+      height: 46px;
+      width: 46px;
     }
   }
 `

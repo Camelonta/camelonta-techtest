@@ -6,9 +6,13 @@ const Card = (props) => {
 
   return (
     <StyledCard key={card.id}>
-      <img src={`/icons/${card.icon}.svg`} />
-      <h4> {card.heading}</h4>
-      <p>{card.text} </p>
+      <div>
+        <img src={`/icons/${card.icon}.svg`} />
+      </div>
+      <div>
+        <h4> {card.heading}</h4>
+        <p>{card.text} </p>
+      </div>
     </StyledCard>
   )
 }
