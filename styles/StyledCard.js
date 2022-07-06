@@ -16,6 +16,7 @@ export const StyledCard = styled.div`
     color: white;
 `
 
-export const LargeHeading = styled.h1`
-font-size: 22px;
+export const HeadingH4 = styled.h4`
+font-size: 16px;
+line-height: 24px;
 `

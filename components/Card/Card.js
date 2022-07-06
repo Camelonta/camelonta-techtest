@@ -1,6 +1,6 @@
-import React from 'react';
-import GlobalStyle from '../../styles/GlobalStyle';
-import { StyledCard } from '../../styles/StyledCard';
+import React from 'react'
+import GlobalStyle from '../../styles/GlobalStyle'
+import { StyledCard } from '../../styles/StyledCard'
 
 import { cards } from '../../data';
 
@@ -13,16 +13,13 @@ const Card = () => {
 
 {cards.map((item) => (
 <StyledCard key={item.id}>
+<img src={`/icons/${item.icons}.svg`}/>
     <p>Icon: {item.icon}</p>
-    <p>Heading: {item.heading}</p>
-    <p>Text: {item.text} </p>
+   <h4> {item.heading}</h4>
+    <p>{item.text} </p>
   </StyledCard>
 
-            // <StyledCard
-            //   key={item.id}
-            //   icon={item.icon}
-            //   text={item.text}
-            //   />
+
              ))}
 
     {/* <StyledCard> */}
@@ -36,7 +33,7 @@ const Card = () => {
     {/* </StyledCard> */}
 
   </>
-)};
+)}
 
 
 export default Card
