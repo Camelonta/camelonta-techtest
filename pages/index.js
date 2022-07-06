@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 
 import { Header } from "../components/Card/Header"
 import { Footer } from "../components/Card/Footer"
+import { CardsContainer } from "../styles/StyledCard"
 
 export default function Index() {
   const [data, setData] = useState([])
@@ -24,7 +25,9 @@ export default function Index() {
   return (
     <>
       <Header />
-      <div>{data && data.map((card) => <Card card={card} test={test} />)}</div>
+      <CardsContainer>
+        {data && data.map((card) => <Card card={card} test={test} />)}
+      </CardsContainer>
       <Footer />
       <GlobalStyle />
     </>

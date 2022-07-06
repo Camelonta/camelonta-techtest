@@ -6,7 +6,7 @@ export const devices = {
   desktop: "(min-width: 1025px)",
 }
 
-export const OuterContainer = styled.div`
+export const CardsContainer = styled.div`
   width: 375px;
   margin: 0 auto;
   display: flex;

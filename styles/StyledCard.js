@@ -20,6 +20,20 @@ export const Container = styled.div`
   }
 `
 
+export const CardsContainer = styled.div`
+  width: 375px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+
+  @media ${devices.tablet} {
+    width: 768px;
+  }
+  @media ${devices.desktop} {
+    width: 1025px;
+  }
+`
+
 export const StyledCard = styled.div`
   padding: 1rem 2rem;
   background-color: #136744;
@@ -32,7 +46,7 @@ export const StyledCard = styled.div`
     font-weight: 700;
   }
   p {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 24px;
     font-weight: 400;
   }
