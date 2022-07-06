@@ -7,6 +7,7 @@ const GlobalStyle = createGlobalStyle`
 body {
     font-family: 'Verdana', sans-serif;
     background: #136744;
+    margin: 1em;
 }
 `
 

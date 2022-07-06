@@ -26,7 +26,7 @@ export const StyledCard = styled.div`
   display: flex;
   flex-direction: row;
   color: white;
-  padding: 2rem 0 0 0;
+  padding: 2rem 1rem 0 0;
 
   h4 {
     font-size: 16px;
