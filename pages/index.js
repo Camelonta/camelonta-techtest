@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import Card from '../components/Card/Card';
-
+import Heading from '../components/Heading/Heading';
 export default function Index() {
 
 
@@ -35,6 +35,7 @@ export default function Index() {
 
   return (
     <div>
+      <Heading />
       {data && data.map((card) => (
         <Card card={card} />
       ))}
