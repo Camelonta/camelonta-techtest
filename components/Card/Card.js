@@ -1,11 +1,11 @@
 import React from 'react';
-import styles from './styles.module.css';
+import s from './styles.module.css';
 import Icon from '../Icon/Icon.js';
 
 const Card = ({ card }) => {
   const { id, heading, text, icon } = card;
   return (
-    <div className={styles.card}>
+    <div className={s.card}>
       <p><strong>id:</strong> {id}</p>
       <p><strong>heading:</strong> {heading}</p>
       <p><strong>text:</strong> {text}</p>
