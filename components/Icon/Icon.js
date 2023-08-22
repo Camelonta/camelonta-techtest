@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './styles.module.css';
+import s from './styles.module.css';
 
 const Icon = ({ icon }) => {
     const svg = `/icons/${icon}.svg`;
