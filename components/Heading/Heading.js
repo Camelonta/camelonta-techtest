@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './styles.module.css';
+import s from './styles.module.css';
 
 const Heading = () => {
     // const svg = `/icons/${icon}.svg`;
@@ -7,7 +7,7 @@ const Heading = () => {
 
     return (
         <div>
-            <h1>{heading}</h1>
+            <h1 className={s.h1}>{heading}</h1>
         </div>
     )
 };
