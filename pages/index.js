@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
-import Card from '../components/Card/Card';
 import Heading from '../components/Heading/Heading';
+import s from './styles.module.css';
+import IconCard from '../components/IconCard/IconCard';
 
 export default function Index() {
 
@@ -16,12 +17,17 @@ export default function Index() {
     fetchData();
   }, []);
 
+
   return (
     <div>
       <Heading />
-      {data && data.map((card) => (
-        <Card card={card} />
-      ))}
+      <div className={s.cardContainer}>
+        {data && data.map((card) => (
+          <IconCard card={card} key={card.id} />
+        ))}
+      </div>
+
     </div>
+
   )
 }
