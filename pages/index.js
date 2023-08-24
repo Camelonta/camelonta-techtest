@@ -13,10 +13,8 @@ function Index({ data }) {
         <CardBlock data={data} />
       </div>
     </div>
-
   )
 }
-
 
 export async function getStaticProps() {
   try {
