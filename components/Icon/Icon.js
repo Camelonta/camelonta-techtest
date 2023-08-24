@@ -5,8 +5,10 @@ const Icon = ({ icon }) => {
     const svg = `/icons/${icon}.svg`;
 
     return (
-        <div>
-            <img src={svg} />
+        <div className={s.wrapper}>
+            <div className={s.container}>
+                <img src={svg} alt={icon} className={s.img} />
+            </div>
         </div>
     )
 };
