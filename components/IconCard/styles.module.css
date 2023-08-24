@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+    align-items: flex-start;
+}
+
+@media (min-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+}
