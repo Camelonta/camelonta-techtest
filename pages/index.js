@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import Heading from '../components/Heading/Heading';
 import CardBlock from '../components/CardBlock/CardBlock';
+import s from './styles.module.css';
 
 export default function Index() {
 
@@ -18,9 +19,11 @@ export default function Index() {
 
 
   return (
-    <div>
+    <div className={s.container}>
       <Heading />
-      <CardBlock data={data} />
+      <div className={s.cardBlockContainer}>
+        <CardBlock data={data} />
+      </div>
     </div>
 
   )

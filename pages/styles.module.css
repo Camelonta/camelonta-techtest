@@ -1,0 +1,16 @@
+.container {
+    max-width: 100%;
+}
+
+@media (min-width: 480px) {
+    .container {
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .cardBlockContainer {
+        display: flex;
+        justify-content: center;
+    }
+}
