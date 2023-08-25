@@ -1,18 +1,19 @@
-import { useState, useEffect } from 'react';
 import Heading from '../components/Heading/Heading';
 import CardBlock from '../components/CardBlock/CardBlock';
 import s from './styles.module.css';
-import React from 'react';
+import DataProvider from '../contexts/DataProvider';
 
 function Index({ data }) {
 
   return (
-    <div className={s.container}>
-      <Heading />
-      <div className={s.cardBlockContainer}>
-        <CardBlock data={data} />
+    <DataProvider initialData={data}>
+      <div className={s.container}>
+        <Heading />
+        <div className={s.cardBlockContainer}>
+          <CardBlock />
+        </div>
       </div>
-    </div>
+    </DataProvider>
   )
 }
 

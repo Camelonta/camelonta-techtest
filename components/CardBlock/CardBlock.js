@@ -1,7 +1,10 @@
+import { useContext } from 'react';
 import IconCard from "../IconCard/IconCard";
 import s from "./styles.module.css"
+import DataContext from "../../contexts/DataContext";
 
-const CardBlock = ({ data }) => {
+const CardBlock = () => {
+    const data = useContext(DataContext);
 
     return (
         <div className={s.cardContainer}>
