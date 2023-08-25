@@ -1,0 +1,27 @@
+ .wrapper {
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
+ }
+
+ .container {
+    display: grid;
+    place-items: center;
+    min-width: 72px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 1px solid white;
+    overflow: hidden;
+}
+
+.img{
+    max-width: 90%;
+    max-height: auto;
+}
+
+@media (min-width: 768px) {
+
+    .wrapper{
+        padding-bottom: 0px;
+    }
+}
