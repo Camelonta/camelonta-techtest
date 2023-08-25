@@ -12,5 +12,4 @@ const Icon = ({ icon }) => {
     )
 };
 
-
 export default Icon;

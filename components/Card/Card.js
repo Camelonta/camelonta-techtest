@@ -1,4 +1,3 @@
-import React from 'react';
 import s from './styles.module.css';
 
 const Card = ({ card }) => {
@@ -10,6 +9,5 @@ const Card = ({ card }) => {
     </div>
   )
 };
-
 
 export default Card;
