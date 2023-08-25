@@ -4,7 +4,7 @@ import s from './styles.module.css';
 
 const IconCard = ({ card }) => {
     return (
-        <div className={s.container}>
+        <div className={s.container} tabIndex="0">
             <Icon icon={card.icon} />
             <Card card={card} key={card.id} />
         </div>
