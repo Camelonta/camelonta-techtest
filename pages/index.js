@@ -2,11 +2,14 @@ import Heading from '../components/Heading/Heading';
 import CardBlock from '../components/CardBlock/CardBlock';
 import s from './styles.module.css';
 import DataProvider from '../contexts/DataProvider';
+import { navbarItems } from '../navbarData';
+import Navbar from '../components/Navbar/Navbar';
 
-function Index({ data }) {
+function Index({ data, navbarItems }) {
 
   return (
-    <DataProvider initialData={data}>
+    <DataProvider initialData={data} navbarItems={navbarItems}>
+      <Navbar />
       <div className={s.container}>
         <Heading />
         <div className={s.cardBlockContainer}>
@@ -30,6 +33,7 @@ export async function getStaticProps() {
     return {
       props: {
         data,
+        navbarItems,
       },
       revalidate: 60,
     };
@@ -39,6 +43,7 @@ export async function getStaticProps() {
     return {
       props: {
         data: [],
+        navbarItems,
       },
     };
   }
