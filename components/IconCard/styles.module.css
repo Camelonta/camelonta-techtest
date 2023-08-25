@@ -3,6 +3,7 @@
     align-items: flex-start;
     min-width: fit-content;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
 }
 
 .container:hover, .container:focus {
